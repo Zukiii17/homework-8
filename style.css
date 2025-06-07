@@ -5,9 +5,15 @@
   font-family: "Inter", sans-serif;
 }
 
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --primary-text: #000000;
+  --secondary-text: #f5f5f5;
+}
+
 body {
-  background-color: gray;
-  margin: auto;
+  background-color: lightgray;
 }
 
 .main-container {
@@ -18,7 +24,7 @@ body {
   width: 510px;
   height: 299px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--main-color);
 }
 
 .main-container .icon {
@@ -30,6 +36,7 @@ body {
 }
 
 .main-container .text {
+  color: var(--primary-text);
   font-size: 24px;
   font-weight: 600;
 }
@@ -39,9 +46,9 @@ body {
   border-radius: 8px;
   width: 248px;
   height: 48px;
-  color: white;
+  color: var(--secondary-text);
   cursor: pointer;
-  background-color: black;
+  background-color: var(--secondary-color);
 }
 
 .main-container .close {
